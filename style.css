@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+*{
+    margin: 0.1vw;
+    padding: 0.2vw;
+}
+
+nav{
+    background-color: rgb(19, 50, 50);
+    color:  aliceblue;
+    height: 2.5vw;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    padding: 1.2vw;
+    font-family: 'Rubik Iso', 'sans-serif';
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    background-color: rgb(45, 32, 100);
+    display: flex;
+    justify-content: center;
+    margin-top: 0em;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 15vw);
+    grid-template-columns: repeat(3, 15vw);
+    color: aquamarine;
+    position: relative;
+}
+
+.box{
+    border: 0.3vw solid burlywood;
+    font-size: 8vw;
+    cursor:initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(179, 152, 203);
+}
+
+.gameInfo{
+    padding: 4vw;
+    font-size: 2vw;
+    color:indianred;
+}
+
+.info{
+    display: flex;
+}
+
+.line{
+    background-color: rgb(211, 123, 24);
+    width: 0.2vw;
+    height: 75%;
+    position: absolute;
+    
+}
+.intro{
+    padding: 3vw;
+    font-size: 1vw;
+    align-items: center;
+    text-align: center;
+    color: brown;
+    background-color: beige;
+}
+#reset{
+    background-color: blanchedalmond;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 0.1vw;
+    margin-bottom: 0.1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    font-family: revert;
+    font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+    .gameContainer{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .gameInfo{
+        margin-top: 34vw;
+    }
+}
